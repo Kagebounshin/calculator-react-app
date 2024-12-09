@@ -1,3 +1,4 @@
+import React from 'react';
 import './ButtonBox.css';
 // Holds all the button components
 const ButtonBox = ({ children }) => {

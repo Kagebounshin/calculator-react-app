@@ -1,3 +1,4 @@
+import React from 'react';
 import './Wrapper.css';
 
 // Wrapper for the calculator
