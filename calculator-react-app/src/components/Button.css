@@ -1,6 +1,6 @@
 button {
     border: none;
-    background-color: red;
+    background-color: rgb(211, 42, 107);
     font-size: 24px;
     color: white;
     font-weight: bold;
@@ -11,7 +11,7 @@ button {
 
 button:hover {
     transition: 1ms ease-in-out;
-    background-color: rgba(255, 0, 0, 0.397);
+    background-color: rgb(233, 26, 105);
 }
 
 .equals {
