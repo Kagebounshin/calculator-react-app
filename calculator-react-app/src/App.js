@@ -4,11 +4,11 @@ import Screen from './components/Screen';
 import ButtonBox from './components/ButtonBox';
 import Button from './components/Button';
 
-const App = () => {
+function App () {
     return (
         <>
         <Wrapper>
-            <Screen value="0" />
+            <Screen />
             <ButtonBox>
                 <Button 
                     className=''
