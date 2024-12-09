@@ -3,12 +3,15 @@ import Wrapper from './components/Wrapper';
 import Screen from './components/Screen';
 import ButtonBox from './components/ButtonBox';
 import Button from './components/Button';
+import ErrorBoundary from './ErrorBoundary';
 
 function App () {
     return (
         <>
         <Wrapper>
-            <Screen />
+            <ErrorBoundary fallback="error">
+                <Screen value=""/>
+            </ErrorBoundary>
             <ButtonBox>
                 <Button 
                     className=''
