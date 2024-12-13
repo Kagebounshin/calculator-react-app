@@ -5,6 +5,7 @@ import Screen from './components/Screen';
 import ButtonBox from './components/ButtonBox';
 import Button from './components/Button';
 
+// Button values
 const btnValues = [
     ['C', '+-', '%', '/'],
     [7, 8, 9, 'X'],
@@ -19,7 +20,7 @@ function App () {
         num: 0,
         res: 0,
     });
-    
+
     return (
         <>
         <Wrapper>
