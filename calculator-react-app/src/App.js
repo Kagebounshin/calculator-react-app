@@ -17,9 +17,7 @@ function App () {
     return (
         <>
         <Wrapper>
-            <ErrorBoundary fallback="error">
-                <Screen value=""/>
-            </ErrorBoundary>
+            <Screen value=""/>
             <ButtonBox> 
                 {
                     btnValues.flat().map((btn, i) => {

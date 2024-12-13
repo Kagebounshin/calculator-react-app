@@ -7,7 +7,9 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
+    <ErrorBoundary fallback="error">
     <App />
+    </ErrorBoundary>
   </StrictMode>
 );
 
