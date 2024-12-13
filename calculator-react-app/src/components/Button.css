@@ -1,6 +1,6 @@
 button {
     border: none;
-    background-color: rgb(211, 42, 107);
+    background-color: #CE4760;
     font-size: 24px;
     color: white;
     font-weight: bold;
@@ -11,15 +11,18 @@ button {
 
 button:hover {
     transition: 1ms ease-in-out;
-    background-color: rgb(233, 26, 105);
+    background-color: #CE4760;
 }
 
 .equals {
     grid-column: 3 / 5;
-    background-color: aqua;
+    background-color: #f7de42;
+    color: black;
+    font-size: 3rem;
+    font-weight: 100;
 }
 
 .equals:hover {
     transition: 1ms ease-in-out;
-    background-color: rgba(0, 255, 255, 0.336);
+    background-color: #FCE762;
 }
