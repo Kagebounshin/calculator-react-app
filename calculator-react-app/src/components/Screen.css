@@ -12,3 +12,8 @@
     font-weight: bold;
     box-sizing: border-box;
 }
+
+.screen:hover {
+    transition: 1ms ease-in-out;
+    background-color: #363f3bc4;
+}
