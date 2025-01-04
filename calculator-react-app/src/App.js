@@ -36,8 +36,8 @@ function App () {
                         : calc.num + value,
                     res: !calc.sign ? 0 : calc.res,                
             });
-        } 
-    }
+        }; 
+    };
 
     const commaClickHandler = (e) => {
         e.preventDefault();
@@ -49,6 +49,20 @@ function App () {
         });
     };
 
+    const signClickHandler = (e) => {
+        e.preventDefault();
+        const value = e.target.innerHTML;
+
+        setCalc({
+            ...calc,
+            sign: value,
+            res: !calc.res && calc.num ? calc.num : calc.red,
+            num: 0,
+        });
+    };
+
+    
+    
     return (
         <>
         <Wrapper>
