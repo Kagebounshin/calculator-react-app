@@ -92,6 +92,10 @@ function App () {
             sign: '',
         })
     };
+
+    const percentClickHandler = () => {
+        
+    }
     
 
     return (
@@ -112,7 +116,7 @@ function App () {
                                         : btn === '+-'
                                         ? invertClickHandler
                                         : btn === '%'
-                                        ? procentClickHandler
+                                        ? percentClickHandler
                                         : btn === '='
                                         ? equalsClickHandler
                                         : btn === '/' || btn === 'x' || btn === '-' || btn === '+'
