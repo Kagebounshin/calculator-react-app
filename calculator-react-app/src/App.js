@@ -24,7 +24,7 @@ function App () {
     return (
         <>
         <Wrapper>
-            <Screen value=""/>
+            <Screen value={calc.num ? calc.num : calc.res} />
             <ButtonBox> 
                 {
                     btnValues.flat().map((btn, i) => {
@@ -33,9 +33,21 @@ function App () {
                                 key={i}
                                 className={btn === '=' ? 'equals' : '' }
                                 value={btn}
-                                onClick={() => {
-                                console.log('clicked');
-                            }}
+                                onClick={
+                                    btn === "C"
+                                        ? resetClickHandler
+                                        : btn === '+-'
+                                        ? invertClickHandler
+                                        : btn === '%'
+                                        ? procentClickHandler
+                                        : btn '='
+                                        ? equalsClickHandler
+                                        : btn === '/' || btn === 'x' || btn === '-' || btn === '+'
+                                        ? signClickHandler
+                                        : btn === '.'
+                                        ? commaClickHandler
+                                        : numClickHandler
+                                }
                             />
                         )
                     })
